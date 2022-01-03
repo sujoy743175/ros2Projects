@@ -1,0 +1,21 @@
+[5.304s] Invoking command in '/home/robotics/ros2_ws/src/blink_publisher': PYTHONPATH=/home/robotics/ros2_ws/install/blink_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/blink_publisher build --build-base /home/robotics/ros2_ws/build/blink_publisher/build install --prefix /home/robotics/ros2_ws/install/blink_publisher --record /home/robotics/ros2_ws/build/blink_publisher/install.log --single-version-externally-managed
+[9.817s] running egg_info
+[9.828s] writing ../../build/blink_publisher/blink_publisher.egg-info/PKG-INFO
+[9.836s] writing dependency_links to ../../build/blink_publisher/blink_publisher.egg-info/dependency_links.txt
+[9.851s] writing entry points to ../../build/blink_publisher/blink_publisher.egg-info/entry_points.txt
+[9.861s] writing requirements to ../../build/blink_publisher/blink_publisher.egg-info/requires.txt
+[9.865s] writing top-level names to ../../build/blink_publisher/blink_publisher.egg-info/top_level.txt
+[10.471s] reading manifest file '../../build/blink_publisher/blink_publisher.egg-info/SOURCES.txt'
+[10.490s] writing manifest file '../../build/blink_publisher/blink_publisher.egg-info/SOURCES.txt'
+[10.501s] running build
+[10.501s] running build_py
+[10.512s] running install
+[10.527s] running install_lib
+[10.553s] running install_data
+[10.564s] running install_egg_info
+[10.591s] removing '/home/robotics/ros2_ws/install/blink_publisher/lib/python3.8/site-packages/blink_publisher-0.0.0-py3.8.egg-info' (and everything under it)
+[10.599s] Copying ../../build/blink_publisher/blink_publisher.egg-info to /home/robotics/ros2_ws/install/blink_publisher/lib/python3.8/site-packages/blink_publisher-0.0.0-py3.8.egg-info
+[10.638s] running install_scripts
+[10.952s] Installing blink script to /home/robotics/ros2_ws/install/blink_publisher/lib/blink_publisher
+[10.959s] writing list of installed files to '/home/robotics/ros2_ws/build/blink_publisher/install.log'
+[11.393s] Invoked command in '/home/robotics/ros2_ws/src/blink_publisher' returned '0': PYTHONPATH=/home/robotics/ros2_ws/install/blink_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/blink_publisher build --build-base /home/robotics/ros2_ws/build/blink_publisher/build install --prefix /home/robotics/ros2_ws/install/blink_publisher --record /home/robotics/ros2_ws/build/blink_publisher/install.log --single-version-externally-managed

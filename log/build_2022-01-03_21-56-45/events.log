@@ -1,0 +1,185 @@
+[0.000000] (-) TimerEvent: {}
+[0.000541] (blink_publisher) JobQueued: {'identifier': 'blink_publisher', 'dependencies': OrderedDict()}
+[0.000631] (ros2_teleop_keyboard) JobQueued: {'identifier': 'ros2_teleop_keyboard', 'dependencies': OrderedDict()}
+[0.000703] (blink_publisher) JobStarted: {'identifier': 'blink_publisher'}
+[0.093466] (-) TimerEvent: {}
+[0.194873] (-) TimerEvent: {}
+[0.297302] (-) TimerEvent: {}
+[0.398804] (-) TimerEvent: {}
+[0.501288] (-) TimerEvent: {}
+[0.602802] (-) TimerEvent: {}
+[0.704674] (-) TimerEvent: {}
+[0.808769] (-) TimerEvent: {}
+[0.910257] (-) TimerEvent: {}
+[1.011797] (-) TimerEvent: {}
+[1.112569] (-) TimerEvent: {}
+[1.213823] (-) TimerEvent: {}
+[1.315385] (-) TimerEvent: {}
+[1.417185] (-) TimerEvent: {}
+[1.518650] (-) TimerEvent: {}
+[1.620836] (-) TimerEvent: {}
+[1.722394] (-) TimerEvent: {}
+[1.825651] (-) TimerEvent: {}
+[1.928314] (-) TimerEvent: {}
+[2.029818] (-) TimerEvent: {}
+[2.131343] (-) TimerEvent: {}
+[2.233291] (-) TimerEvent: {}
+[2.288991] (blink_publisher) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/blink_publisher', 'build', '--build-base', '/home/robotics/ros2_ws/build/blink_publisher/build', 'install', '--prefix', '/home/robotics/ros2_ws/install/blink_publisher', '--record', '/home/robotics/ros2_ws/build/blink_publisher/install.log', '--single-version-externally-managed'], 'cwd': '/home/robotics/ros2_ws/src/blink_publisher', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'robotics', 'SSH_AGENT_PID': '1815', 'XDG_SESSION_TYPE': 'x11', 'IDF_TOOLS_INSTALL_CMD': '/home/robotics/esp/esp-idf/install.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/robotics', 'OLDPWD': '/home/robotics', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1617', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2217', 'OPENOCD_SCRIPTS': '/home/robotics/.espressif/tools/openocd-esp32/v0.10.0-esp32-20211111/openocd-esp32/share/openocd/scripts', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/robotics/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robotics', 'JOURNAL_STREAM': '8:38794', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'robotics', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'IDF_PATH': '/home/robotics/esp/esp-idf', 'WINDOWPATH': '2', 'PATH': '/home/robotics/ros2_ws/install/teleop_twist_keyboard/bin:/home/robotics/esp/esp-idf/components/esptool_py/esptool:/home/robotics/esp/esp-idf/components/espcoredump:/home/robotics/esp/esp-idf/components/partition_table:/home/robotics/esp/esp-idf/components/app_update:/home/robotics/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin:/home/robotics/.espressif/tools/esp32ulp-elf/2.28.51-esp-20191205/esp32ulp-elf-binutils/bin:/home/robotics/.espressif/tools/openocd-esp32/v0.10.0-esp32-20211111/openocd-esp32/bin:/home/robotics/.espressif/python_env/idf4.3_py3.8_env/bin:/home/robotics/esp/esp-idf/tools:/opt/ros/foxy/bin:/home/robotics/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/robotics-VirtualBox:@/tmp/.ICE-unix/1867,unix/robotics-VirtualBox:/tmp/.ICE-unix/1867', 'INVOCATION_ID': '43b260ca7ca44ebca3b8b4aba902e920', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/robotics/ros2_ws/install/ros2_teleop_keyboard:/home/robotics/ros2_ws/install/teleop_twist_keyboard:/home/robotics/ros2_ws/install/blink_publisher:/opt/ros/foxy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:11ec1a7d-fa20-4978-b470-d6ca10c82a61', 'QT_ACCESSIBILITY': '1', 'IDF_PYTHON_ENV_PATH': '/home/robotics/.espressif/python_env/idf4.3_py3.8_env', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IDF_TOOLS_EXPORT_CMD': '/home/robotics/esp/esp-idf/export.sh', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/robotics/ros2_ws/build/blink_publisher', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robotics/ros2_ws/install/blink_publisher/lib/python3.8/site-packages:/home/robotics/ros2_ws/install/ros2_teleop_keyboard/lib/python3.8/site-packages:/home/robotics/ros2_ws/install/teleop_twist_keyboard/lib/python3.8/site-packages:/home/robotics/ros2_ws/install/blink_publisher/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[2.333452] (-) TimerEvent: {}
+[2.435070] (-) TimerEvent: {}
+[2.536399] (-) TimerEvent: {}
+[2.637897] (-) TimerEvent: {}
+[2.740392] (-) TimerEvent: {}
+[2.841894] (-) TimerEvent: {}
+[2.943667] (-) TimerEvent: {}
+[3.045873] (-) TimerEvent: {}
+[3.147382] (-) TimerEvent: {}
+[3.249876] (-) TimerEvent: {}
+[3.351375] (-) TimerEvent: {}
+[3.452951] (-) TimerEvent: {}
+[3.554406] (-) TimerEvent: {}
+[3.656878] (-) TimerEvent: {}
+[3.758394] (-) TimerEvent: {}
+[3.859953] (-) TimerEvent: {}
+[3.961409] (-) TimerEvent: {}
+[4.063930] (-) TimerEvent: {}
+[4.165421] (-) TimerEvent: {}
+[4.266921] (-) TimerEvent: {}
+[4.369440] (-) TimerEvent: {}
+[4.470918] (-) TimerEvent: {}
+[4.572456] (-) TimerEvent: {}
+[4.673968] (-) TimerEvent: {}
+[4.775491] (-) TimerEvent: {}
+[4.878915] (-) TimerEvent: {}
+[4.980424] (-) TimerEvent: {}
+[5.081995] (-) TimerEvent: {}
+[5.112982] (blink_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[5.132257] (blink_publisher) StdoutLine: {'line': b'writing ../../build/blink_publisher/blink_publisher.egg-info/PKG-INFO\n'}
+[5.133773] (blink_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/blink_publisher/blink_publisher.egg-info/dependency_links.txt\n'}
+[5.137660] (blink_publisher) StdoutLine: {'line': b'writing entry points to ../../build/blink_publisher/blink_publisher.egg-info/entry_points.txt\n'}
+[5.140315] (blink_publisher) StdoutLine: {'line': b'writing requirements to ../../build/blink_publisher/blink_publisher.egg-info/requires.txt\n'}
+[5.142195] (blink_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/blink_publisher/blink_publisher.egg-info/top_level.txt\n'}
+[5.182462] (-) TimerEvent: {}
+[5.284004] (-) TimerEvent: {}
+[5.384799] (-) TimerEvent: {}
+[5.486035] (-) TimerEvent: {}
+[5.588523] (-) TimerEvent: {}
+[5.690018] (-) TimerEvent: {}
+[5.749096] (blink_publisher) StdoutLine: {'line': b"reading manifest file '../../build/blink_publisher/blink_publisher.egg-info/SOURCES.txt'\n"}
+[5.758955] (blink_publisher) StdoutLine: {'line': b"writing manifest file '../../build/blink_publisher/blink_publisher.egg-info/SOURCES.txt'\n"}
+[5.769038] (blink_publisher) StdoutLine: {'line': b'running build\n'}
+[5.771139] (blink_publisher) StdoutLine: {'line': b'running build_py\n'}
+[5.781193] (blink_publisher) StdoutLine: {'line': b'running install\n'}
+[5.790561] (-) TimerEvent: {}
+[5.791334] (blink_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[5.823931] (blink_publisher) StdoutLine: {'line': b'running install_data\n'}
+[5.833887] (blink_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.852690] (blink_publisher) StdoutLine: {'line': b"removing '/home/robotics/ros2_ws/install/blink_publisher/lib/python3.8/site-packages/blink_publisher-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.857308] (blink_publisher) StdoutLine: {'line': b'Copying ../../build/blink_publisher/blink_publisher.egg-info to /home/robotics/ros2_ws/install/blink_publisher/lib/python3.8/site-packages/blink_publisher-0.0.0-py3.8.egg-info\n'}
+[5.876439] (blink_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[5.891085] (-) TimerEvent: {}
+[5.992622] (-) TimerEvent: {}
+[6.094142] (-) TimerEvent: {}
+[6.120742] (blink_publisher) StdoutLine: {'line': b'Installing blink script to /home/robotics/ros2_ws/install/blink_publisher/lib/blink_publisher\n'}
+[6.141022] (blink_publisher) StdoutLine: {'line': b"writing list of installed files to '/home/robotics/ros2_ws/build/blink_publisher/install.log'\n"}
+[6.194891] (-) TimerEvent: {}
+[6.297144] (-) TimerEvent: {}
+[6.357514] (blink_publisher) CommandEnded: {'returncode': 0}
+[6.397711] (-) TimerEvent: {}
+[6.500147] (-) TimerEvent: {}
+[6.550189] (blink_publisher) JobEnded: {'identifier': 'blink_publisher', 'rc': 0}
+[6.556912] (ros2_teleop_keyboard) JobStarted: {'identifier': 'ros2_teleop_keyboard'}
+[6.600810] (-) TimerEvent: {}
+[6.704702] (-) TimerEvent: {}
+[6.807627] (-) TimerEvent: {}
+[6.909096] (-) TimerEvent: {}
+[7.010849] (-) TimerEvent: {}
+[7.112160] (-) TimerEvent: {}
+[7.213631] (-) TimerEvent: {}
+[7.315150] (-) TimerEvent: {}
+[7.416890] (-) TimerEvent: {}
+[7.519161] (-) TimerEvent: {}
+[7.620664] (-) TimerEvent: {}
+[7.722154] (-) TimerEvent: {}
+[7.823768] (-) TimerEvent: {}
+[7.926347] (-) TimerEvent: {}
+[8.028719] (-) TimerEvent: {}
+[8.130252] (-) TimerEvent: {}
+[8.232763] (-) TimerEvent: {}
+[8.334218] (-) TimerEvent: {}
+[8.435749] (-) TimerEvent: {}
+[8.537234] (-) TimerEvent: {}
+[8.638751] (-) TimerEvent: {}
+[8.740285] (-) TimerEvent: {}
+[8.841777] (-) TimerEvent: {}
+[8.943281] (-) TimerEvent: {}
+[9.044826] (-) TimerEvent: {}
+[9.146321] (-) TimerEvent: {}
+[9.247851] (-) TimerEvent: {}
+[9.349377] (-) TimerEvent: {}
+[9.459760] (-) TimerEvent: {}
+[9.536580] (ros2_teleop_keyboard) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/ros2_teleop_keyboard', 'build', '--build-base', '/home/robotics/ros2_ws/build/ros2_teleop_keyboard/build', 'install', '--prefix', '/home/robotics/ros2_ws/install/ros2_teleop_keyboard', '--record', '/home/robotics/ros2_ws/build/ros2_teleop_keyboard/install.log', '--single-version-externally-managed'], 'cwd': '/home/robotics/ros2_ws/src/ros2_teleop_keyboard', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'robotics', 'SSH_AGENT_PID': '1815', 'XDG_SESSION_TYPE': 'x11', 'IDF_TOOLS_INSTALL_CMD': '/home/robotics/esp/esp-idf/install.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/robotics', 'OLDPWD': '/home/robotics', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1617', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2217', 'OPENOCD_SCRIPTS': '/home/robotics/.espressif/tools/openocd-esp32/v0.10.0-esp32-20211111/openocd-esp32/share/openocd/scripts', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/robotics/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'robotics', 'JOURNAL_STREAM': '8:38794', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'robotics', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'IDF_PATH': '/home/robotics/esp/esp-idf', 'WINDOWPATH': '2', 'PATH': '/home/robotics/ros2_ws/install/teleop_twist_keyboard/bin:/home/robotics/esp/esp-idf/components/esptool_py/esptool:/home/robotics/esp/esp-idf/components/espcoredump:/home/robotics/esp/esp-idf/components/partition_table:/home/robotics/esp/esp-idf/components/app_update:/home/robotics/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin:/home/robotics/.espressif/tools/esp32ulp-elf/2.28.51-esp-20191205/esp32ulp-elf-binutils/bin:/home/robotics/.espressif/tools/openocd-esp32/v0.10.0-esp32-20211111/openocd-esp32/bin:/home/robotics/.espressif/python_env/idf4.3_py3.8_env/bin:/home/robotics/esp/esp-idf/tools:/opt/ros/foxy/bin:/home/robotics/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/robotics-VirtualBox:@/tmp/.ICE-unix/1867,unix/robotics-VirtualBox:/tmp/.ICE-unix/1867', 'INVOCATION_ID': '43b260ca7ca44ebca3b8b4aba902e920', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/robotics/ros2_ws/install/ros2_teleop_keyboard:/home/robotics/ros2_ws/install/teleop_twist_keyboard:/home/robotics/ros2_ws/install/blink_publisher:/opt/ros/foxy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:11ec1a7d-fa20-4978-b470-d6ca10c82a61', 'QT_ACCESSIBILITY': '1', 'IDF_PYTHON_ENV_PATH': '/home/robotics/.espressif/python_env/idf4.3_py3.8_env', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IDF_TOOLS_EXPORT_CMD': '/home/robotics/esp/esp-idf/export.sh', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/robotics/ros2_ws/build/ros2_teleop_keyboard', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robotics/ros2_ws/install/ros2_teleop_keyboard/lib/python3.8/site-packages:/home/robotics/ros2_ws/install/ros2_teleop_keyboard/lib/python3.8/site-packages:/home/robotics/ros2_ws/install/teleop_twist_keyboard/lib/python3.8/site-packages:/home/robotics/ros2_ws/install/blink_publisher/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[9.560661] (-) TimerEvent: {}
+[9.661864] (-) TimerEvent: {}
+[9.765125] (-) TimerEvent: {}
+[9.866639] (-) TimerEvent: {}
+[9.969121] (-) TimerEvent: {}
+[10.070642] (-) TimerEvent: {}
+[10.172288] (-) TimerEvent: {}
+[10.273672] (-) TimerEvent: {}
+[10.375181] (-) TimerEvent: {}
+[10.476676] (-) TimerEvent: {}
+[10.578230] (-) TimerEvent: {}
+[10.680672] (-) TimerEvent: {}
+[10.783225] (-) TimerEvent: {}
+[10.885667] (-) TimerEvent: {}
+[10.988176] (-) TimerEvent: {}
+[11.090661] (-) TimerEvent: {}
+[11.192179] (-) TimerEvent: {}
+[11.293668] (-) TimerEvent: {}
+[11.395193] (-) TimerEvent: {}
+[11.496736] (-) TimerEvent: {}
+[11.598254] (-) TimerEvent: {}
+[11.701229] (-) TimerEvent: {}
+[11.802179] (-) TimerEvent: {}
+[11.903761] (-) TimerEvent: {}
+[12.005727] (-) TimerEvent: {}
+[12.107680] (-) TimerEvent: {}
+[12.209183] (-) TimerEvent: {}
+[12.217082] (ros2_teleop_keyboard) StdoutLine: {'line': b'running egg_info\n'}
+[12.219663] (ros2_teleop_keyboard) StdoutLine: {'line': b'writing ../../build/ros2_teleop_keyboard/ros2_teleop_keyboard.egg-info/PKG-INFO\n'}
+[12.222374] (ros2_teleop_keyboard) StdoutLine: {'line': b'writing dependency_links to ../../build/ros2_teleop_keyboard/ros2_teleop_keyboard.egg-info/dependency_links.txt\n'}
+[12.223937] (ros2_teleop_keyboard) StdoutLine: {'line': b'writing entry points to ../../build/ros2_teleop_keyboard/ros2_teleop_keyboard.egg-info/entry_points.txt\n'}
+[12.225705] (ros2_teleop_keyboard) StdoutLine: {'line': b'writing requirements to ../../build/ros2_teleop_keyboard/ros2_teleop_keyboard.egg-info/requires.txt\n'}
+[12.227927] (ros2_teleop_keyboard) StdoutLine: {'line': b'writing top-level names to ../../build/ros2_teleop_keyboard/ros2_teleop_keyboard.egg-info/top_level.txt\n'}
+[12.309726] (-) TimerEvent: {}
+[12.411237] (-) TimerEvent: {}
+[12.512741] (-) TimerEvent: {}
+[12.616244] (-) TimerEvent: {}
+[12.643346] (ros2_teleop_keyboard) StdoutLine: {'line': b"reading manifest file '../../build/ros2_teleop_keyboard/ros2_teleop_keyboard.egg-info/SOURCES.txt'\n"}
+[12.661135] (ros2_teleop_keyboard) StdoutLine: {'line': b"writing manifest file '../../build/ros2_teleop_keyboard/ros2_teleop_keyboard.egg-info/SOURCES.txt'\n"}
+[12.666704] (ros2_teleop_keyboard) StdoutLine: {'line': b'running build\n'}
+[12.667554] (ros2_teleop_keyboard) StdoutLine: {'line': b'running build_py\n'}
+[12.668665] (ros2_teleop_keyboard) StdoutLine: {'line': b'copying ros2_teleop_keyboard/teleop_twist_keyboard.py -> /home/robotics/ros2_ws/build/ros2_teleop_keyboard/build/lib/ros2_teleop_keyboard\n'}
+[12.672953] (ros2_teleop_keyboard) StdoutLine: {'line': b'running install\n'}
+[12.679026] (ros2_teleop_keyboard) StdoutLine: {'line': b'running install_lib\n'}
+[12.689873] (ros2_teleop_keyboard) StdoutLine: {'line': b'copying /home/robotics/ros2_ws/build/ros2_teleop_keyboard/build/lib/ros2_teleop_keyboard/teleop_twist_keyboard.py -> /home/robotics/ros2_ws/install/ros2_teleop_keyboard/lib/python3.8/site-packages/ros2_teleop_keyboard\n'}
+[12.693409] (ros2_teleop_keyboard) StdoutLine: {'line': b'byte-compiling /home/robotics/ros2_ws/install/ros2_teleop_keyboard/lib/python3.8/site-packages/ros2_teleop_keyboard/teleop_twist_keyboard.py to teleop_twist_keyboard.cpython-38.pyc\n'}
+[12.717709] (-) TimerEvent: {}
+[12.723277] (ros2_teleop_keyboard) StdoutLine: {'line': b'running install_data\n'}
+[12.730550] (ros2_teleop_keyboard) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.768016] (ros2_teleop_keyboard) StdoutLine: {'line': b"removing '/home/robotics/ros2_ws/install/ros2_teleop_keyboard/lib/python3.8/site-packages/ros2_teleop_keyboard-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[12.774272] (ros2_teleop_keyboard) StdoutLine: {'line': b'Copying ../../build/ros2_teleop_keyboard/ros2_teleop_keyboard.egg-info to /home/robotics/ros2_ws/install/ros2_teleop_keyboard/lib/python3.8/site-packages/ros2_teleop_keyboard-0.0.0-py3.8.egg-info\n'}
+[12.790760] (ros2_teleop_keyboard) StdoutLine: {'line': b'running install_scripts\n'}
+[12.818239] (-) TimerEvent: {}
+[12.919789] (-) TimerEvent: {}
+[13.021275] (-) TimerEvent: {}
+[13.101712] (ros2_teleop_keyboard) StdoutLine: {'line': b'Installing teleop_twist_keyboard script to /home/robotics/ros2_ws/install/ros2_teleop_keyboard/lib/ros2_teleop_keyboard\n'}
+[13.111200] (ros2_teleop_keyboard) StdoutLine: {'line': b"writing list of installed files to '/home/robotics/ros2_ws/build/ros2_teleop_keyboard/install.log'\n"}
+[13.121826] (-) TimerEvent: {}
+[13.224334] (-) TimerEvent: {}
+[13.325808] (-) TimerEvent: {}
+[13.352316] (ros2_teleop_keyboard) CommandEnded: {'returncode': 0}
+[13.424012] (ros2_teleop_keyboard) JobEnded: {'identifier': 'ros2_teleop_keyboard', 'rc': 0}
+[13.426388] (-) TimerEvent: {}
+[13.441003] (-) EventReactorShutdown: {}

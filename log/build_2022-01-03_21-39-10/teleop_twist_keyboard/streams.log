@@ -1,0 +1,24 @@
+[2.903s] Invoking command in '/home/robotics/ros2_ws/src/ros2_teleop_keyboard': PYTHONPATH=/home/robotics/ros2_ws/install/teleop_twist_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_twist_keyboard build --build-base /home/robotics/ros2_ws/build/teleop_twist_keyboard/build install --prefix /home/robotics/ros2_ws/install/teleop_twist_keyboard --record /home/robotics/ros2_ws/build/teleop_twist_keyboard/install.log --single-version-externally-managed
+[5.820s] running egg_info
+[5.826s] writing ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/PKG-INFO
+[5.828s] writing dependency_links to ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/dependency_links.txt
+[5.829s] writing entry points to ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/entry_points.txt
+[5.838s] writing requirements to ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/requires.txt
+[5.840s] writing top-level names to ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/top_level.txt
+[6.159s] file teleop_twist_keyboard.py (for module teleop_twist_keyboard) not found
+[6.160s] reading manifest file '../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/SOURCES.txt'
+[6.177s] writing manifest file '../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info/SOURCES.txt'
+[6.183s] running build
+[6.184s] running build_py
+[6.185s] file teleop_twist_keyboard.py (for module teleop_twist_keyboard) not found
+[6.188s] file teleop_twist_keyboard.py (for module teleop_twist_keyboard) not found
+[6.189s] running install
+[6.196s] running install_lib
+[6.206s] running install_egg_info
+[6.229s] removing '/home/robotics/ros2_ws/install/teleop_twist_keyboard/lib/python3.8/site-packages/teleop_twist_keyboard-0.0.0-py3.8.egg-info' (and everything under it)
+[6.232s] Copying ../../build/teleop_twist_keyboard/teleop_twist_keyboard.egg-info to /home/robotics/ros2_ws/install/teleop_twist_keyboard/lib/python3.8/site-packages/teleop_twist_keyboard-0.0.0-py3.8.egg-info
+[6.238s] running install_scripts
+[6.463s] Installing teleop_twist_keyboard script to /home/robotics/ros2_ws/install/teleop_twist_keyboard/lib/ros2_teleop_keyboard
+[6.464s] file teleop_twist_keyboard.py (for module teleop_twist_keyboard) not found
+[6.465s] writing list of installed files to '/home/robotics/ros2_ws/build/teleop_twist_keyboard/install.log'
+[6.680s] Invoked command in '/home/robotics/ros2_ws/src/ros2_teleop_keyboard' returned '0': PYTHONPATH=/home/robotics/ros2_ws/install/teleop_twist_keyboard/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_twist_keyboard build --build-base /home/robotics/ros2_ws/build/teleop_twist_keyboard/build install --prefix /home/robotics/ros2_ws/install/teleop_twist_keyboard --record /home/robotics/ros2_ws/build/teleop_twist_keyboard/install.log --single-version-externally-managed
