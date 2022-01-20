@@ -28,7 +28,7 @@ class Obstacle_Avoidnace(Node):
         # Initialze parameters
         self.fwd_distance_callback
         self.lft_distance_callback
-        #self.rt_distance_callback
+        self.rt_distance_callback
         #self.Deltas = 0
         self.cmd = Twist()
         #self.stop = False               
@@ -36,7 +36,9 @@ class Obstacle_Avoidnace(Node):
         #self.count_threshold = 10
         self.fwd_distance_threshould = 0
         self.lft_distance_threshould = 0
-        #self.rt_distance_threshould = ""
+        self.rt_distance_threshould = 0
+        self.fdw_limit = 40
+        self.side_limit = 15
 
     def forward(self):
             self.cmd.linear.x = 0.2
@@ -76,15 +78,18 @@ class Obstacle_Avoidnace(Node):
         # Constant Velocity
         #self.cmd.linear.x = self.speed
         if self.lft_distance_threshould == 0:
-            self.lft_distance_threshould =10
+            self.lft_distance_threshould = self.side_limit
+
+        if self.rt_distance_threshould == 0:
+            self.rt_distance_threshould = self.side_limit
 
         if self.fwd_distance_threshould == 0:
-            self.fwd_distance_threshould =30
+            self.fwd_distance_threshould = self.fdw_limit
         
-        if self.fwd_distance_threshould >= 30 and self.lft_distance_threshould >= 10:
+        if self.fwd_distance_threshould >= self.fdw_limit and self.lft_distance_threshould >= self.side_limit and self.rt_distance_threshould >= self.side_limit:
             self.forward()
         
-        elif self.fwd_distance_threshould < 30 and self.lft_distance_threshould>30:
+        elif self.fwd_distance_threshould < self.fdw_limit  and self.lft_distance_threshould>self.rt_distance_threshould:
             #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
             #self.stop = True
             self.Stop()
@@ -93,7 +98,25 @@ class Obstacle_Avoidnace(Node):
             self.left()
             self.Stop()   
 
-        elif self.fwd_distance_threshould >= 30 and self.lft_distance_threshould<10:
+        elif self.fwd_distance_threshould < self.fdw_limit  and self.lft_distance_threshould<self.rt_distance_threshould:
+            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
+            #self.stop = True
+            self.Stop()
+            self.reverse()
+            self.Stop()
+            self.right()
+            self.Stop() 
+
+        elif self.fwd_distance_threshould < self.fdw_limit  and self.lft_distance_threshould==self.rt_distance_threshould:
+            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
+            #self.stop = True
+            self.Stop()
+            self.reverse()
+            self.Stop()
+            self.left()
+            self.Stop() 
+
+        elif self.fwd_distance_threshould >= self.fdw_limit and self.lft_distance_threshould<self.side_limit and self.rt_distance_threshould>self.side_limit:
             #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
             #self.stop = True
             self.Stop()
@@ -101,13 +124,27 @@ class Obstacle_Avoidnace(Node):
             self.Stop()
             self.right()
             self.Stop()
-        
-        else:
+
+        elif self.fwd_distance_threshould >= self.fdw_limit and self.rt_distance_threshould<self.side_limit and self.lft_distance_threshould>self.side_limit:
+            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
+            #self.stop = True
             self.Stop()
             self.reverse()
             self.Stop()
-            self.right()
-            self.Stop() 
+            self.left()
+            self.Stop()
+
+        elif self.fwd_distance_threshould >= self.fdw_limit and self.rt_distance_threshould<self.side_limit and self.lft_distance_threshould<self.side_limit:
+            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
+            #self.stop = True
+            self.Stop()
+            self.reverse()
+            self.Stop()
+            self.left()
+            self.Stop()
+        
+        else:
+            pass
             
               
 
