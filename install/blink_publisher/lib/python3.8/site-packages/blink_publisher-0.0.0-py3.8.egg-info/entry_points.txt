@@ -1,3 +1,0 @@
-[console_scripts]
-blink = blink_publisher.blink:main
-

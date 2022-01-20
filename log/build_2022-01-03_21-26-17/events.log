@@ -1,5 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000810] (-) JobUnselected: {'identifier': 'blink_publisher'}
-[0.000958] (-) JobUnselected: {'identifier': 'teleop_twist_keyboard'}
-[0.001114] (-) JobUnselected: {'identifier': 'teleop_twist_keyboard'}
-[0.001231] (-) EventReactorShutdown: {}
