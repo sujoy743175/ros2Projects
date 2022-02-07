@@ -21,7 +21,7 @@ class Obstacle_Avoidnace(Node):
         self.sub = self.create_subscription(Int32, 'right_limit_state', self.right_limit_state_callback, 1)
         self.sub  # prevent unused variable warning
         # Publishes cmd_vel
-        self.publisher_ = self.create_publisher(Twist, 'cmd_vel', 1)
+        self.publisher_ = self.create_publisher(Twist, 'cmd_vel', 10)
 
         # Vehicle parameters
         #self.speed = 0.2
@@ -102,7 +102,8 @@ class Obstacle_Avoidnace(Node):
             self.reverse()
             self.Stop()
             self.right()
-            self.Stop() 
+            self.Stop()
+            self.forward() 
         
         elif self.right_limit_state ==0:
             self.get_logger().info('right limit  breached .......STOPPING') 
@@ -112,6 +113,7 @@ class Obstacle_Avoidnace(Node):
             self.Stop()
             self.left()
             self.Stop() 
+            self.forward()
 
         elif self.fwd_distance_threshould < self.fdw_limit  and self.lft_distance_threshould>self.rt_distance_threshould:
             #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
@@ -120,7 +122,8 @@ class Obstacle_Avoidnace(Node):
             self.reverse()
             self.Stop()
             self.left()
-            self.Stop()   
+            self.Stop()
+            self.forward()   
 
         elif self.fwd_distance_threshould < self.fdw_limit  and self.lft_distance_threshould<self.rt_distance_threshould:
             #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
@@ -129,7 +132,8 @@ class Obstacle_Avoidnace(Node):
             self.reverse()
             self.Stop()
             self.right()
-            self.Stop() 
+            self.Stop()
+            self.forward() 
 
         elif self.fwd_distance_threshould < self.fdw_limit  and self.lft_distance_threshould==self.rt_distance_threshould:
             #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
@@ -139,6 +143,7 @@ class Obstacle_Avoidnace(Node):
             self.Stop()
             self.left()
             self.Stop() 
+            self.forward()
 
         elif self.fwd_distance_threshould >= self.fdw_limit and self.lft_distance_threshould<self.side_limit and self.rt_distance_threshould>self.side_limit:
             #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
@@ -148,6 +153,7 @@ class Obstacle_Avoidnace(Node):
             self.Stop()
             self.right()
             self.Stop()
+            self.forward()
 
         elif self.fwd_distance_threshould >= self.fdw_limit and self.rt_distance_threshould<self.side_limit and self.lft_distance_threshould>self.side_limit:
             #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
@@ -157,6 +163,7 @@ class Obstacle_Avoidnace(Node):
             self.Stop()
             self.left()
             self.Stop()
+            self.forward()
 
         elif self.fwd_distance_threshould >= self.fdw_limit and self.rt_distance_threshould<self.side_limit and self.lft_distance_threshould<self.side_limit:
             #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
@@ -166,6 +173,7 @@ class Obstacle_Avoidnace(Node):
             self.Stop()
             self.left()
             self.Stop()
+            self.forward()
         
         else:
             pass
@@ -212,8 +220,9 @@ class Obstacle_Avoidnace(Node):
 def main(args=None): 
     rclpy.init(args=args)
     try:
-        obstacle_avoidnace = Obstacle_Avoidnace()
-        rclpy.spin(obstacle_avoidnace)
+        while(1):
+            obstacle_avoidnace = Obstacle_Avoidnace()
+            rclpy.spin(obstacle_avoidnace)
     except KeyboardInterrupt:
         pass
     except ExternalShutdownException:
@@ -222,6 +231,3 @@ def main(args=None):
         rclpy.try_shutdown()
         obstacle_avoidnace.destroy_node()
 
-if __name__ == '__main__':
-    # Runs a Obstacle_Avoidnace node when this script is run directly (not through an entrypoint)
-    main()
