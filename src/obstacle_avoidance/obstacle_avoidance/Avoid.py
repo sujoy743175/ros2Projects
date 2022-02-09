@@ -96,7 +96,8 @@ class Obstacle_Avoidnace(Node):
             self.forward()
 
         elif self.left_limit_state ==0:
-            self.get_logger().info('left limit breached .........STOPPING') 
+            print('left limit breached .........STOPPING') 
+            #self.get_logger().info('left limit breached .........STOPPING') 
             #self.stop = True
             self.Stop()
             self.reverse()
@@ -106,7 +107,8 @@ class Obstacle_Avoidnace(Node):
             self.forward() 
         
         elif self.right_limit_state ==0:
-            self.get_logger().info('right limit  breached .......STOPPING') 
+            print('right limit  breached .......STOPPING') 
+            #self.get_logger().info('right limit  breached .......STOPPING') 
             #self.stop = True
             self.Stop()
             self.reverse()
@@ -116,7 +118,8 @@ class Obstacle_Avoidnace(Node):
             self.forward()
 
         elif self.fwd_distance_threshould < self.fdw_limit  and self.lft_distance_threshould>self.rt_distance_threshould:
-            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
+            print('fwd_distance_threshould  breached ...STOPPING...going left') 
+            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING...going left') 
             #self.stop = True
             self.Stop()
             self.reverse()
@@ -126,7 +129,8 @@ class Obstacle_Avoidnace(Node):
             self.forward()   
 
         elif self.fwd_distance_threshould < self.fdw_limit  and self.lft_distance_threshould<self.rt_distance_threshould:
-            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
+            print('fwd_distance_threshould  breached ...STOPPING....going right') 
+            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING....going right') 
             #self.stop = True
             self.Stop()
             self.reverse()
@@ -136,7 +140,8 @@ class Obstacle_Avoidnace(Node):
             self.forward() 
 
         elif self.fwd_distance_threshould < self.fdw_limit  and self.lft_distance_threshould==self.rt_distance_threshould:
-            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
+            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING equal distance going left ') 
+            print('fwd_distance_threshould  breached ...STOPPING equal distance going left ') 
             #self.stop = True
             self.Stop()
             self.reverse()
@@ -146,7 +151,8 @@ class Obstacle_Avoidnace(Node):
             self.forward()
 
         elif self.fwd_distance_threshould >= self.fdw_limit and self.lft_distance_threshould<self.side_limit and self.rt_distance_threshould>self.side_limit:
-            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
+            #self.get_logger().info('left_distance_threshould  breached ...STOPPING going right') 
+            print('left_distance_threshould  breached ...STOPPING going right') 
             #self.stop = True
             self.Stop()
             self.reverse()
@@ -156,7 +162,8 @@ class Obstacle_Avoidnace(Node):
             self.forward()
 
         elif self.fwd_distance_threshould >= self.fdw_limit and self.rt_distance_threshould<self.side_limit and self.lft_distance_threshould>self.side_limit:
-            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
+            print('right_distance_threshould  breached ...STOPPING going left') 
+            #self.get_logger().info('right_distance_threshould  breached ...STOPPING going left') 
             #self.stop = True
             self.Stop()
             self.reverse()
@@ -166,7 +173,8 @@ class Obstacle_Avoidnace(Node):
             self.forward()
 
         elif self.fwd_distance_threshould >= self.fdw_limit and self.rt_distance_threshould<self.side_limit and self.lft_distance_threshould<self.side_limit:
-            #self.get_logger().info('fwd_distance_threshould  breached ...STOPPING') 
+            print('both side_distance_threshould  breached ...STOPPING trying left') 
+            #self.get_logger().info('both side_distance_threshould  breached ...STOPPING trying left') 
             #self.stop = True
             self.Stop()
             self.reverse()
@@ -196,21 +204,21 @@ class Obstacle_Avoidnace(Node):
     
     def fwd_distance_callback(self, msg):
         #blink_code.LedInput = msg.data
-        self.get_logger().info('Forward distance is ......: "%d"' % msg.data) 
+        #self.get_logger().info('Forward distance is ......: "%d"' % msg.data) 
         self.fwd_distance_threshould = msg.data
         #print(type(self.lft_distance_threshould))
         self.Obstacle_Avoidance_module()
 
     def lft_distance_callback(self, msg):
         #blink_code.LedInput = msg.data
-        self.get_logger().info('Left distance is ......: "%d"' % msg.data) 
+        #self.get_logger().info('Left distance is ......: "%d"' % msg.data) 
         self.lft_distance_threshould = int(msg.data)
         #print(type(self.lft_distance_threshould))
         #self.Obstacle_Avoidance_module()
     
     def rt_distance_callback(self, msg):
         #blink_code.LedInput = msg.data
-        self.get_logger().info('Right distance is ......: "%d"' % msg.data) 
+        #self.get_logger().info('Right distance is ......: "%d"' % msg.data) 
         self.rt_distance_threshould = msg.data
         #print(type(self.lft_distance_threshould))
         #self.Obstacle_Avoidance_module()
